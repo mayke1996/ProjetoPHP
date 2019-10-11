@@ -1,38 +1,18 @@
-<?php
+<?php 
 
-define("IP", "127.0.0.1");
-echo IP;
+include("filho.php");
 
-echo "<br>";
-$numero = 1;
-	echo $numero;
+$pessoa = new Pessoa(70, 1.80, 23);
 
-echo "<br>";
-echo "Hello World" ;
-echo"<br>";
+/*echo $pessoa;*/
 
-$num1 = 1;
-$num2 = 2;
+$filho = new Filho(65, 1.70, 24);
+$filho->setTimeDoCoracao("Cruzeirão Criminoso!");
 
-echo("O Resultado da soma é: " .($num1 + $num2));
-echo"<br>";
+/*echo $filho;
+echo"<br>".$filho->getTimeDoCoracao()."<br>";*/
 
-<?php
+echo json_encode($pessoa);
 
-define("IP", "127.0.0.1");
-echo IP;
 
-echo "<br>";
-$numero = 1;
-	echo $numero;
-
-echo "<br>";
-echo "Hello World" ;
-echo"<br>";
-
-$num1 = 1;
-$num2 = 2;
-
-echo("O Resultado da soma é: " .($num1 + $num2));
-echo"<br>";
-
+?>
